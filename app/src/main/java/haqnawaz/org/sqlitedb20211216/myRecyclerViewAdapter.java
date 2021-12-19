@@ -32,10 +32,10 @@ public class myRecyclerViewAdapter extends RecyclerView.Adapter<myRecyclerViewAd
     @Override
     public void onBindViewHolder(@NonNull myRecyclerViewAdapter.MyViewHolder holder, int position) {
         holder.data=studentsList.get(position);
-        holder.textViewName.setText(holder.data.getName());
-        holder.textViewAge.setText(""+holder.data.getAge());
+        holder.textViewName.setText("Name : "+holder.data.getName());
+        holder.textViewAge.setText("Age : "+holder.data.getAge());
         holder.textViewIsActive.setText(holder.data.isActive()==true?"True":"False");
-        holder.textViewId.setText(""+holder.data.getId());
+        holder.textViewId.setText("Id : "+holder.data.getId());
         holder.deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

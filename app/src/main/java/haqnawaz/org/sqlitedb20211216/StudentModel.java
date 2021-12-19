@@ -9,7 +9,13 @@ public class StudentModel {
         this.name = name;
         this.age = age;
         this.isActive = isActive;
-     }
+    }
+    public StudentModel(int id,String name, int age, boolean isActive) {
+        this.id=id;
+        this.name = name;
+        this.age = age;
+        this.isActive = isActive;
+    }
 
     public String getName() {
         return name;
@@ -28,15 +34,15 @@ public class StudentModel {
     }
 
     public boolean isActive() {
-        return isActive;
+        return this.isActive;
     }
 
     public void setActive(boolean active) {
-        isActive = active;
+        this.isActive = active;
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(int id) {
